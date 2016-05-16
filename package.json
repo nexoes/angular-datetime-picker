@@ -13,10 +13,7 @@
     "date",
     "directive",
     "time picker",
-    "time",
-    "circular",
-    "circular picker",
-    "circular time picker"
+    "time"
   ],
   "author": "https://github.com/pmoelgaard",
   "main": "dist/javascript/angular-datetime-picker.js",
