@@ -1,6 +1,6 @@
 {
-  "name": "angular-circular-timepicker",
-  "version": "0.2.0",
+  "name": "angular-datetime-picker",
+  "version": "0.1.0",
   "description": "A date time picker element directive with a circular interface for choosing time",
   "scripts": {
     "start": "gulp",
@@ -18,9 +18,8 @@
     "circular picker",
     "circular time picker"
   ],
-  "author": "https://github.com/sidaudhi/angular-circular-timepicker/graphs/contributors",
-  "homepage": "http://sidaudhi.github.io/angular-circular-timepicker",
-  "main": "dist/javascript/angular.circular.timepicker.js",
+  "author": "https://github.com/pmoelgaard",
+  "main": "dist/javascript/angular-datetime-picker.js",
   "dependencies": {
     "angular": "^1.4.9",
     "moment": "^2.11.2"
@@ -46,6 +45,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sidaudhi/angular-circular-timepicker.git"
+    "url": "https://github.com/nexoes/angular-datetime-picker.git"
   }
 }

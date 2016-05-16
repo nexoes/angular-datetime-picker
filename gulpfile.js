@@ -16,24 +16,24 @@ gulp.task('styles',['copy-sprites','copy-fonts'], function() {
       './source/stylesheets/*.styl'
     ])
     .pipe(stylus({use:nib()}))
-    .pipe(concatCss('angular.circular.timepicker.css'))
-    .pipe(gulp.dest('./dist/stylesheets'));
+    .pipe(concatCss('angular-datetime-picker.css'))
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('copy-sprites', function() {
    gulp.src('./source/images/*.{png,jpg}')
-   .pipe(gulp.dest('./dist/images'));
+   .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('copy-fonts', function() {
    gulp.src('./source/fonts/*')
-   .pipe(gulp.dest('./dist/fonts'));
+   .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('scripts',function(){
   return gulp.src([
-    './source/javascript/*.js',
+    './source/javascript/*.js'
   ])
-  .pipe(concat('angular.circular.timepicker.js'))
-  .pipe(gulp.dest('./dist/javascript'))
+  .pipe(concat('angular-datetime-picker.js'))
+  .pipe(gulp.dest('./dist'))
 })

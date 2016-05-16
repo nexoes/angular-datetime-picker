@@ -1,17 +1,9 @@
-/**
- * @license angular-circular-timepicker  version: 0.1.0
- * Copyright 2016 sidaudhi.com, Inc. http://www.sidaudhi.com
- * License: MIT
- *
- * @author        Siddharth Audhinarayanan
- * @since        2016-Jan-31
- */
  String.prototype.paddingLeft = function (paddingValue) {
     return String(paddingValue + this).slice(-paddingValue.length);
  };
 
-var app = angular.module('angular.circular.datetimepicker',[]);
-app.directive('circulartimepicker',[function(){
+var app = angular.module('nxDatetimePicker',[]);
+app.directive('nxDatetimePicker',[function(){
   return {
     restrict: 'E',
     replace: true,
@@ -23,7 +15,9 @@ app.directive('circulartimepicker',[function(){
             +   '<div class="datetimepicker-modal" ng-click="setState(false)" ng-if="state && config.modal"  style="background-color:{{config.backgroundColor}}"></div>'
             +   '<div ng-click="setState(false)" class="datetimepicker-close" style="color:{{config.color}}" ng-if="state && config.modal">&#10006;</div>'
             +   '<input type="hidden" ng-model="model" />'
-            +   '<button class="datetimepicker-toggle" ng-click="state=!state">&#128197;</button>'
+            +   '<md-button class="datetimepicker-toggle" ng-click="state=!state">'
+            +       '<md-icon class="md-datepicker-calendar-icon" md-svg-icon="md-calendar"></md-icon>'
+            +   '</md-button>'
             +   '<div class="datetimepicker-display">{{display}}</div>'
             +   '<div ng-if="state" class="datetimepicker-content" ng-class="{\'datetimepicker-absolute\':config.modal}">'
             +     '<div class="datetimepicker-tabs">'
@@ -67,7 +61,7 @@ app.directive('circulartimepicker',[function(){
             + '</div>',
     link: function(scope,element,attributes){
       scope.state = false;
-      scope.tab = 'time';
+      scope.tab = 'date';
       scope.setTab = function(tab){
         scope.tab = tab;
       }

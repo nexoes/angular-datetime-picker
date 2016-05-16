@@ -7,6 +7,11 @@
  * @since        2016-Jan-31
  */
 
+.datetimepicker-toggle {
+  margin-top: -50px;
+  margin-right: -10px;
+}
+
 .datetimepicker {
   font-family: Arial;
 }
@@ -89,6 +94,7 @@
   border: 1px solid rgba(0,0,0,0.15);
   font-size: 15px;
   min-height: 34px;
+  display: none;
 }
 
 .datetimepicker .datetimepicker-toggle {
@@ -96,6 +102,7 @@
   padding: 7px;
   border: 0px;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .datetimepicker .datetimepicker-modal {
