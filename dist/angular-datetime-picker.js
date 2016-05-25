@@ -15,7 +15,7 @@ app.directive('nxDatetimePicker',[function(){
             +   '<div class="datetimepicker-modal" ng-click="setState(false)" ng-if="state && config.modal"  style="background-color:{{config.backgroundColor}}"></div>'
             +   '<div ng-click="setState(false)" class="datetimepicker-close" style="color:{{config.color}}" ng-if="state && config.modal">&#10006;</div>'
             +   '<input type="hidden" ng-model="model" />'
-            +   '<md-button class="datetimepicker-toggle" ng-click="state=!state">'
+            +   '<md-button class="datetimepicker-toggle" ng-click="state=!state" aria-label="Toggle DateTime">'
             +       '<md-icon class="md-datepicker-calendar-icon" md-svg-icon="md-calendar"></md-icon>'
             +   '</md-button>'
             +   '<div class="datetimepicker-display">{{display}}</div>'
